@@ -1,0 +1,58 @@
+*{
+    color:#a2acb6;
+    text-decoration: none;
+}
+body{
+    background-color: #8f3f65;
+}
+
+button {
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+
+canvas {
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.main{
+    display: flex;
+}
+.work-window{
+    margin-left: 10px;
+}
+
+.sidebar{
+    width: 200px;
+    height: 700px;
+    background-color: #221d24;
+    display: flex;
+    justify-content: center;
+}
+.controls {
+    margin-top: 10px;
+}
+
+.movable {
+    min-width: 100px;
+    min-height: 100px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    cursor: grab;
+    user-select: none;
+}
+
+#toggleMoveButton {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

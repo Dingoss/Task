@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Дошка</title>
+    <link rel="stylesheet" type="text/css" href="main_style.css">
+</head>
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <label for="objectTitleInput">Назва завдання</label>
+            <input type="text" id="objectTitleInput" placeholder="Введіть назву завдання">
+            <label for="objectDescriptionTextArea">Опис завдання</label>
+            <textarea id="objectDescriptionTextArea" style="resize: none; height: 200px;"></textarea>
+            <button onclick="saveChanges()">Зберегти</button>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="sidebar">
+            <a href="draw.html">Дошка для малювання</a>
+        </div>
+        <div class="container">
+            <button class="createCol" onclick="createColumn()"><a class="createCol-title">Створити список</a></button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+

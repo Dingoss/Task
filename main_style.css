@@ -1,0 +1,165 @@
+*{
+    color:#a2acb6;
+}
+body{
+    background-color: #8f3f65;
+}
+
+button {
+    outline: none;
+    border: 0;
+    background: transparent;
+  }
+
+.main{
+    display: flex;
+}
+.sidebar{
+    width: 200px;
+    height: 700px;
+    background-color: #221d24;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+div{
+    text-decoration: none;
+}
+.column {
+    width: 250px;
+    min-height: 100px;
+    border: 1px solid #000;
+    margin-left:10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    border-radius: 15px;
+
+}
+
+.object {
+    width: 90%;
+    min-height: 30px;
+    background-color: #22272b;
+    margin: 5px 0;
+    cursor: grab;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.delete-button {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.delete-col{
+    position: absolute;
+    right:5px;
+    top: 5px;
+}
+
+.createCol{
+    height: 50px;
+    width: 150;
+    background: rgba(233, 233, 233, 0.4);
+    margin: 0px 10px;
+}
+.createCol-title{
+    color:#fff;
+}
+
+.column-title{
+    margin-top: 10px;
+}
+.createObj{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.object-title{
+    margin: 10px;
+    color: #88939d;
+}
+.object-title:hover, .delete-button:hover, .delete-col:hover{
+    color:red;
+    cursor: pointer;
+}
+
+button{
+    border-radius: 10%;
+    border: 0px;
+    cursor: pointer;
+}
+.object-text {
+    cursor: pointer;
+    height: 20px;
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ddd;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 0 50vmax rgba(0,0,0,.5);
+    z-index: 1000;
+    height: 600px;
+    width: 500px;
+}
+
+.modal-content {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.modal-content button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #45a049;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
